@@ -570,7 +570,7 @@ function o(props: any[], additional: any) {
 }
 
 function m(additional: any) {
-    return { props: [], additional };
+    return { props: [] as any[], additional };
 }
 
 function r(name: string) {

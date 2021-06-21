@@ -1,19 +1,26 @@
 {
   "name": "sophize-datamodel",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Typescript interfaces that model data used on the Sophize platform.",
-  "main": "types.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Abhishek Chugh",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sophize/datamodel-typescript"
+    "url": "git+https://github.com/Sophize/datamodel-typescript.git"
   },
   "keywords": [
+    "sophize",
+    "math",
+    "mathematics",
     "sophize"
-  ]
+  ],
+  "author": "Abhishek Chugh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sophize/datamodel-typescript/issues"
+  },
+  "homepage": "https://github.com/Sophize/datamodel-typescript#readme"
 }
