@@ -69,6 +69,7 @@ export class ResourcePointer {
   }
 
   public static fromString(s: string, defaultDatasetId?: string) {
+    if(!s) return null;
     s = s.trim();
     if (s.startsWith("#")) s = s.substring(1);
     const parts = s.split("/");
