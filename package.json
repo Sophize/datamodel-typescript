@@ -1,12 +1,14 @@
 {
   "name": "sophize-datamodel",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Typescript interfaces that model data used on the Sophize platform.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "exit 0"
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/Sophize/datamodel-typescript/issues"
   },
-  "homepage": "https://github.com/Sophize/datamodel-typescript#readme"
+  "homepage": "https://github.com/Sophize/datamodel-typescript#readme",
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.4"
+  }
 }
