@@ -9,5 +9,6 @@ This library is published to npm at https://www.npmjs.com/package/sophize-datamo
   quicktype -s schema ../datamodel-json/all_resources.json -o ./types.ts --converters all-objects
   ```
 * Update the version number in file `package.json`
-* Compile using `.\build.sh` and publish using `npm publish`
-* Publish a new release [here](https://github.com/Sophize/datamodel-typescript/releases). Use the version number to set the `Tag version` and `Release Title` fields.
+* Publish a new release [here](https://github.com/Sophize/sophize-datamodel/releases). Use the version number to set the `Tag version` and `Release Title` fields. The release will be published to npm using a GitHub action.
+
+For publishing locally, compile using `.\build.sh` and publish using `npm publish`.
