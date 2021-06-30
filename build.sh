@@ -1,2 +1,2 @@
 rm -r ./dist
-tsc
+npm run build
