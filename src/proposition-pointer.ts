@@ -32,6 +32,10 @@ export class PropositionPointer {
         (propPtr.negative !== null && propPtr.negative !== undefined))
     );
   }
+  
+  public static fromStringArr(arr: string[], defaultDatasetId?: string) {
+    return arr.map((s) => PropositionPointer.fromString(s, defaultDatasetId));
+  }
 
   public static fromString(s: string, defaultDatasetId?: string) {
     let ptr = null;
