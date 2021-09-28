@@ -8,6 +8,7 @@ import {
   Article,
   Beliefset,
   Language,
+  Machine,
   Page,
   Project,
   ProofRequest,
@@ -33,6 +34,7 @@ export { Article };
 export { Project };
 export { Page };
 export { Language };
+export { Machine };
 export { TruthValue };
 export { ProofRequest };
 export { ProofResponse };
